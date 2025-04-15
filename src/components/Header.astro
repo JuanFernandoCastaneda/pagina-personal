@@ -24,8 +24,11 @@ const currentPath =
 const isActive = (path: string) => {
   const currentPathArray = currentPath.split("/").filter(p => p.trim());
   const pathArray = path.split("/").filter(p => p.trim());
-
-  return currentPath === path || currentPathArray[0] === pathArray[0];
+  return (
+    currentPath === path ||
+    currentPathArray[0] === pathArray[0] ||
+    currentPath == `/${currentLocale}${path}`
+  );
 };
 ---
 
@@ -47,13 +50,22 @@ const isActive = (path: string) => {
     >
       <a
         href={getRelativeLocalePath(currentLocale, "/")}
-        class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
+        class="absolute py-1 text-xl sm:text-2xl leading-7 font-semibold whitespace-nowrap flex flex-row sm:flex-col sm:static"
       >
-        {t("site.title")}
+        <img
+          class="w-16 rounded-xs p-1"
+          src={"/coraje2.svg"}
+          alt="Coraje el perro cobarde"
+        />
+        <div id="page-name">
+          {t("site.title")}
+          <br />
+          {t("site.title2")}
+        </div>
       </a>
       <nav
         id="nav-menu"
-        class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
+        class="mt-4 flex w-full flex-col items-center sm:ms-2 sm:mt-0 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
       >
         <button
           id="menu-btn"
@@ -76,14 +88,14 @@ const isActive = (path: string) => {
             "sm:ms-0 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0",
           ]}
         >
-        <li class="col-span-3">
-          <a
-            href={getRelativeLocalePath(Astro.currentLocale, "/")}
-            class:list={{ "active-nav": isActive("/") }}
-          >
-            {t("home")}
-          </a>
-        </li>
+          <li class="col-span-3">
+            <a
+              href={getRelativeLocalePath(Astro.currentLocale, "")}
+              class:list={{ "active-nav": isActive("") }}
+            >
+              {t("home")}
+            </a>
+          </li>
           <li class="col-span-3">
             <a
               href={getRelativeLocalePath(Astro.currentLocale, "/posts/")}

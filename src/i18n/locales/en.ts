@@ -1,7 +1,8 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "AstroPaper I18n",
+  "site.title": "JuanFernando",
+  "site.title2": "Castaneda",
   "site.desc": "A fork of AstroPaper theme with support for I18n",
 };
 

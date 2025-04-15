@@ -1,5 +1,6 @@
 export interface I18nStrings {
   "site.title": string;
+  "site.title2": string;
   "site.desc": string;
   "hero.title": string;
   "hero.body": string;

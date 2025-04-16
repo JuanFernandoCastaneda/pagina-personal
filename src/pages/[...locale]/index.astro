@@ -56,9 +56,21 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         />
         <span class="sr-only">{t("rssFeed")}</span>
       </a>
-      <p>
-        {t("hero.body")}
-      </p>
+      {
+        t("hero.body")
+          .split("<br>")
+          .map(paragraph => {
+            return (
+              <p>
+                {paragraph}
+                <br />
+                <br />
+              </p>
+            );
+          })
+      }
+      {
+        /*
       <p class="mt-2">
         {t("hero.beforeReadme")}
         <LinkButton
@@ -69,6 +81,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         </LinkButton>
         {t("hero.afterReadme")}
       </p>
+       */
+      }
+
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
@@ -81,9 +96,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         )
       }
     </section>
-
+    {
+      /*
     <Hr />
-
+    
     {
       featuredPosts.length > 0 && (
         <>
@@ -124,6 +140,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <IconArrowRight class="inline-block rtl:rotate-180" />
       </LinkButton>
     </div>
+     */
+    }
   </main>
   <Footer />
 </Layout>

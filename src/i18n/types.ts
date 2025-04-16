@@ -11,6 +11,7 @@ export interface I18nStrings {
   copied: string;
   by: string;
   about: string;
+  cv: string;
   socialLinks: string;
   home: string;
   posts: string;

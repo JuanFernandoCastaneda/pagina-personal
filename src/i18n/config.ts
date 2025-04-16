@@ -25,6 +25,7 @@ export const localeToProfile = {
     googleFontName: "IBM+Plex+Mono", // For OG image generation, font must support 400 and 700 weights, write name as it should goes in a URL, words separated with '+' instead of spaces
     default: true,
   },
+  /*
   en: {
     name: "English",
     messages: ENLocale,
@@ -32,7 +33,6 @@ export const localeToProfile = {
     direction: "ltr",
     googleFontName: "IBM+Plex+Mono",
   },
-  /*
   ar: {
     name: "العربية", 
     messages: ARLocale, 

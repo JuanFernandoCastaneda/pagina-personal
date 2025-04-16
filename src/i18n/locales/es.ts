@@ -8,12 +8,15 @@ const baseStrings = {
 
 const ESLocale: I18nStrings = {
   ...baseStrings,
-  "hero.title": "Mingalaba",
+  "hero.title": "Juan Fernando Castañeda",
+  // Separate paragraphs with <br>
   "hero.body": `
         AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
         blog theme. This theme follows best practices and provides accessibility
         out of the box. Light and dark mode are supported by default. Moreover,
         additional color schemes can also be configured.
+        <br>
+        How will I insert spaces
 `,
   "hero.beforeReadme": "Read the blog posts or check",
   "hero.readme": "README",
@@ -22,7 +25,8 @@ const ESLocale: I18nStrings = {
   copied: "copied",
   by: "by",
   about: "Yo",
-  socialLinks: "Social Links",
+  cv: "HdV",
+  socialLinks: "Redes sociales",
   home: "Inicio",
   posts: "Posts",
   "posts.desc": "All the articles I've posted.",

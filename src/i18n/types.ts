@@ -1,5 +1,6 @@
 export interface I18nStrings {
   "site.title": string;
+  "site.title1": string;
   "site.title2": string;
   "site.desc": string;
   "hero.title": string;
@@ -15,6 +16,7 @@ export interface I18nStrings {
   socialLinks: string;
   home: string;
   posts: string;
+  projects: string;
   "posts.desc": string;
   tag: string;
   "tag.desc": string;

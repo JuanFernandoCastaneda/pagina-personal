@@ -1,7 +1,8 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "JuanFernando",
+  "site.title": "JuanFernandoCastaneda",
+  "site.title1": "Juan Fernando",
   "site.title2": "Castaneda", 
   "site.desc": "A fork of AstroPaper theme with support for I18n",
 };
@@ -29,6 +30,7 @@ const ESLocale: I18nStrings = {
   socialLinks: "Redes sociales",
   home: "Inicio",
   posts: "Posts",
+  projects: "Proyectos",
   "posts.desc": "All the articles I've posted.",
   tag: "Tag",
   "tag.desc": 'All the articles with the tag "{name}".',
@@ -47,11 +49,11 @@ const ESLocale: I18nStrings = {
   pages: "Pages",
   page: "Page",
   pageWithNo: "Page {no}",
-  "navigation.goBack": "Go back",
-  "navigation.goBackHome": "Go Back Home",
-  "navigation.backToTop": "Back to Top",
-  "navigation.nextPost": "Next Post",
-  "navigation.prevPost": "Previous Post",
+  "navigation.goBack": "Volver",
+  "navigation.goBackHome": "Volver a inicio",
+  "navigation.backToTop": "Subir",
+  "navigation.nextPost": "Siguiente",
+  "navigation.prevPost": "Anterior",
   pageNotFound: "Page Not Found",
   notFound: "Not Found",
   rssFeed: "RSS Feed",
@@ -61,7 +63,7 @@ const ESLocale: I18nStrings = {
   "pagination.next": "Next",
   "footer.text": "Copyright © {year} | All rights reserved",
   "date.published": "Published",
-  "date.updated": "Updated",
+  "date.updated": "Actualizado",
   "date.month.1": "January",
   "date.month.2": "February",
   "date.month.3": "March",

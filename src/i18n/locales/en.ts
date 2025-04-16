@@ -1,7 +1,8 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "JuanFernando",
+  "site.title": "JuanFernandoCastaneda",
+  "site.title1": "Juan Fernando",
   "site.title2": "Castaneda",
   "site.desc": "A fork of AstroPaper theme with support for I18n",
 };
@@ -23,6 +24,7 @@ const ENLocale: I18nStrings = {
   socialLinks: "Social Links",
   home: "Home",
   posts: "Posts",
+  projects: "Projects",
   "posts.desc": "All the articles I've posted.",
   tag: "Tag",
   "tag.desc": 'All the articles with the tag "{name}".',
@@ -44,8 +46,8 @@ const ENLocale: I18nStrings = {
   "navigation.goBack": "Go back",
   "navigation.goBackHome": "Go Back Home",
   "navigation.backToTop": "Back to Top",
-  "navigation.nextPost": "Next Post",
-  "navigation.prevPost": "Previous Post",
+  "navigation.nextPost": "Next",
+  "navigation.prevPost": "Previous",
   pageNotFound: "Page Not Found",
   notFound: "Not Found",
   rssFeed: "RSS Feed",

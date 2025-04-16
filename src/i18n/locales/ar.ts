@@ -1,12 +1,16 @@
 import type { I18nStrings } from "@/i18n/types";
 
 const baseStrings = {
-  "site.title": "استرو بيبر مترجم",
+  "site.title": "JuanFernandoCastaneda",
+  "site.title1": "Juan Fernando",
+  "site.title2": "ola",
   "site.desc": "ثيمة متفرعة من استروبيبر مع دعم للترجمة",
 };
 
 const ARLocale: I18nStrings = {
   ...baseStrings,
+  cv: "cv",
+  projects: "projects",
   "hero.title": "أهلاً و سهلاً",
   "hero.body": `استروبيبر هو قالب مدونة Astro بسيط، سريع الاستجابة، سهل الاستخدام، ومتوافق مع محركات البحث. يتبع هذا القالب أفضل الممارسات ويوفر إمكانية الوصول للأشخاص ذوى الهمم. يدعم الوضعان الفاتح والداكن افتراضيًا. كما يمكن أيضًا تكوين أنظمة ألوان إضافية.`,
   "hero.beforeReadme": "اقرأ مقالات المدونة أو اطّلع على",

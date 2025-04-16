@@ -19,17 +19,18 @@ export async function getStaticPaths() {
   const paths = SUPPORTED_LOCALES.flatMap(locale => {
     const posts = postsByLocale[locale] || [];
 
-    const postResult = posts.map(post => ({
+    const postResult = posts.map(post => {
+      const path = getPath(post.id, post.filePath, false) 
+      return ({ 
       params: {
         locale: locale === DEFAULT_LOCALE ? undefined : locale,
-        slug: getPath(post.id, post.filePath, false),
+        slug: path,
       },
       props: { post },
-    }));
-
+    })});
+    
     return postResult;
   });
-
   return paths;
 }
 

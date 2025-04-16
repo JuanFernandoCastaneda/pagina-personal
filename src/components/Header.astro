@@ -58,7 +58,7 @@ const isActive = (path: string) => {
           alt="Coraje el perro cobarde"
         />
         <div id="page-name">
-          {t("site.title")}
+          {t("site.title1")}
           <br />
           {t("site.title2")}
         </div>
@@ -98,10 +98,10 @@ const isActive = (path: string) => {
           </li>
           <li class="col-span-3">
             <a
-              href={getRelativeLocalePath(Astro.currentLocale, "/posts/")}
-              class:list={{ "active-nav": isActive("/posts") }}
+              href={getRelativeLocalePath(Astro.currentLocale, "/projects/")}
+              class:list={{ "active-nav": isActive("/projects") }}
             >
-              {t("posts")}
+              {t("projects")}
             </a>
           </li>
           <li class="col-span-3">

@@ -13,7 +13,7 @@ export interface Props extends CollectionEntry<"blog"> {
 
 const { variant = "h2", padding = 0, data, id, filePath } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone, tags } = data;
+const { title, description, pubDatetime, modDatetime, timezone, tags, previewImagePath } = data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
@@ -23,7 +23,8 @@ const headerProps = {
 const currentLocale = Astro.currentLocale;
 ---
 
-<li class=`my-6 ${padding!==0 && "sm:[&:nth-child(odd)]:pr-3" } sm:[&]:even:pl-3`>
+<li class=`my-6 ${padding!==0 && "sm:[&:nth-child(odd)]:pr-2" } sm:[&]:even:pl-2`>
+  {previewImagePath && (<img alt="project-preview" src={previewImagePath} class="w-60 h-40 rounded-xl pt-1 pb-1 pr-1">)}
   <a
     href={getRelativeLocalePath(currentLocale, getPath(id, filePath))}
     class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"

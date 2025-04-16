@@ -24,9 +24,9 @@ const t = translateFor(Astro.currentLocale);
 let tags = getUniqueTags(posts);
 ---
 
-<Layout title={`${t("tags")} | ${t("site.title")}`}>
+<Layout title={`${t("skills")} | ${t("site.title")}`}>
   <Header />
-  <Main pageTitle={t("tags")} pageDesc={t("tags.desc")}>
+  <Main pageTitle={t("skills")} pageDesc={t("tags.desc")}>
     <ul>
       {tags.map(({ tag, tagName }) => <Tag {tag} {tagName} size="lg" />)}
     </ul>

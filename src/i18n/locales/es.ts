@@ -3,7 +3,7 @@ import type { I18nStrings } from "@/i18n/types";
 const baseStrings = {
   "site.title": "JuanFernandoCastaneda",
   "site.title1": "Juan Fernando",
-  "site.title2": "Castaneda", 
+  "site.title2": "Castaneda",
   "site.desc": "A fork of AstroPaper theme with support for I18n",
 };
 
@@ -12,12 +12,11 @@ const ESLocale: I18nStrings = {
   "hero.title": "Juan Fernando Castañeda",
   // Separate paragraphs with <br>
   "hero.body": `
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-        <br>
-        How will I insert spaces
+         ¡Hola! :]
+  <br>
+Soy un desarrollador junior de Colombia. Esta es mi página web personal; aquí encontrarás información acerca de mí como desarrollador, mis proyectos, mi trasfondo y mis habilidades técnicas (y próximamente espero agregar aún más acerca de yo como persona).
+  <br>
+Actualmente estoy buscando trabajo. Entonces, si ves que mis habilidades se alinean con lo que necesitas, siéntete libre de contactarme vía email. 
 `,
   "hero.beforeReadme": "Read the blog posts or check",
   "hero.readme": "README",
@@ -25,17 +24,16 @@ const ESLocale: I18nStrings = {
   copy: "copy",
   copied: "copied",
   by: "by",
-  about: "Yo",
   cv: "HdV",
-  socialLinks: "Redes sociales",
+  socialLinks: "Links sociales",
   home: "Inicio",
   posts: "Posts",
   projects: "Proyectos",
   "posts.desc": "All the articles I've posted.",
   tag: "Tag",
   "tag.desc": 'All the articles with the tag "{name}".',
-  tags: "Tags",
-  "tags.desc": "All the tags used in posts",
+  skills: "Tecnologías",
+  "skills.desc": "Todas las tecnologías técnicas que tengo",
   archives: "Archives",
   "archives.desc": "All the articles I've archived.",
   featured: "Featured",
@@ -57,7 +55,7 @@ const ESLocale: I18nStrings = {
   pageNotFound: "Page Not Found",
   notFound: "Not Found",
   rssFeed: "RSS Feed",
-  suggestChanges: "Suggest Changes",
+  suggestChanges: "Sugerir cambios",
   toggleLightAndDark: "Toggles light & dark",
   "pagination.prev": "Prev",
   "pagination.next": "Next",
@@ -96,7 +94,7 @@ const ESLocale: I18nStrings = {
   "socials.steam": `${baseStrings["site.title"]} on Steam`,
   "socials.telegram": `${baseStrings["site.title"]} on Telegram`,
   "socials.mastodon": `${baseStrings["site.title"]} on Mastodon`,
-  "sharePost.desc": "Share this post on",
+  "sharePost.desc": "Comparte este proyecto en",
   "sharePost.on": "Share this post on {media}",
   "sharePost.via": "Share this post via {media}",
   "a11y.skipToContent": "Skip to content",

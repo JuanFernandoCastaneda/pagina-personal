@@ -11,7 +11,6 @@ export interface I18nStrings {
   copy: string;
   copied: string;
   by: string;
-  about: string;
   cv: string;
   socialLinks: string;
   home: string;
@@ -20,8 +19,8 @@ export interface I18nStrings {
   "posts.desc": string;
   tag: string;
   "tag.desc": string;
-  tags: string;
-  "tags.desc": string;
+  skills: string;
+  "skills.desc": string;
   archives: string;
   "archives.desc": string;
   featured: string;

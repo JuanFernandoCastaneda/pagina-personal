@@ -11,7 +11,11 @@ const ENLocale: I18nStrings = {
   ...baseStrings,
   "hero.title": "Juan Fernando Castañeda",
   "hero.body": `
-        Hello! :] I'm a junior dev graduated from Universidad de los Andes in Colombia. 
+        Hello! :] 
+        <br> 
+        I'm a junior dev from Colombia. This is my personal website, you will find some information about me as a developer, my projects, my background, and my skills (and soon I hope to add more about me as a human being).
+        <br>
+        I'm currently looking for a job. Thus, if you see that my skills align with what you need, feel free to contact me via email.
 `,
   "hero.beforeReadme": "Read the blog posts or check",
   "hero.readme": "README",
@@ -19,7 +23,6 @@ const ENLocale: I18nStrings = {
   copy: "copy",
   copied: "copied",
   by: "by",
-  about: "About",
   cv: "CV",
   socialLinks: "Social Links",
   home: "Home",
@@ -28,8 +31,8 @@ const ENLocale: I18nStrings = {
   "posts.desc": "All the articles I've posted.",
   tag: "Tag",
   "tag.desc": 'All the articles with the tag "{name}".',
-  tags: "Tags",
-  "tags.desc": "All the tags used in posts",
+  skills: "Tech Skills",
+  "skills.desc": "All the technical abilities I have",
   archives: "Archives",
   "archives.desc": "All the articles I've archived.",
   featured: "Featured",

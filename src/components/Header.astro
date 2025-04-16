@@ -106,10 +106,10 @@ const isActive = (path: string) => {
           </li>
           <li class="col-span-3">
             <a
-              href={getRelativeLocalePath(Astro.currentLocale, "/tags/")}
-              class:list={{ "active-nav": isActive("/tags") }}
+              href={getRelativeLocalePath(Astro.currentLocale, "/skills/")}
+              class:list={{ "active-nav": isActive("/skills") }}
             >
-              {t("tags")}
+              {t("skills")}
             </a>
           </li>
           <li class="col-span-3">
@@ -140,7 +140,9 @@ const isActive = (path: string) => {
               </li>
             )
           }
-          <li class="col-span-1 flex items-center justify-center">
+          {
+            /*
+            <li class="col-span-1 flex items-center justify-center">
             <LinkButton
               href="/search"
               class:list={[
@@ -154,6 +156,8 @@ const isActive = (path: string) => {
               <span class="sr-only">{t("search")}</span>
             </LinkButton>
           </li>
+            */
+          }
           <li class="col-span-1 flex items-center justify-center">
             <LanguagePicker />
           </li>

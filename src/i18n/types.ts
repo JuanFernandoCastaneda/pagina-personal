@@ -8,6 +8,10 @@ export interface I18nStrings {
   "hero.beforeReadme": string;
   "hero.readme": string;
   "hero.afterReadme": string;
+  "status.inProgress": string;
+  "status.interrupted": string;
+  "status.finished": string;
+  "status.lookingFor": string;
   copy: string;
   copied: string;
   by: string;

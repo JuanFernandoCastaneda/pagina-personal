@@ -10,9 +10,10 @@ tags:
   - react
   - typescript
   - supabase
+status: inProgress
 previewImagePath: /projects/elcheemspleo/preview.webp
 description: 
-  Holi
+  Website for searching and offering jobs with extra funcitonalities
 ---
 
 Español

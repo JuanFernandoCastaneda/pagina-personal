@@ -6,19 +6,19 @@ title: "Curriculum Vitae"
 
 * <strong >[Master in Education](https://educacion.uniandes.edu.co/es/programas/escuela-posgrados/maestria-en-educacion)</strong >\
   Universidad de los Andes\
-  2023-2024 <span class="text-orange-500">(Interrupted)</span>
+  2023-2024 <span class="text-orange-400">(Interrupted)</span>
 
-* <strong >[Master in Computing and Systems Engineering](https://sistemas.uniandes.edu.co/es/misis-academico/plan-estudios)</strong> <span class="text-orange-500">(Similar to a Master in CS)</span>\
+* <strong >[Master in Computing and Systems Engineering](https://sistemas.uniandes.edu.co/es/misis-academico/plan-estudios)</strong> <span class="text-orange-400">(Similar to a Master in CS)</span>\
   Universidad de los Andes\
-  2022-2024 <span class="text-orange-500">(Interrupted)</span>
+  2022-2024 <span class="text-orange-400">(Interrupted)</span>
 
-* <strong >[Bachelor in Computing and Systems Engineering](https://sistemas.uniandes.edu.co/images/Programas/ISIS/curriculo-byn-2018_Ingles.pdf)</strong > <span class="text-orange-500">(Similar to a bachelor in SW Engineering)</span>\
+* <strong >[Bachelor in Computing and Systems Engineering](https://sistemas.uniandes.edu.co/images/Programas/ISIS/curriculo-byn-2018_Ingles.pdf)</strong > <span class="text-orange-400">(Similar to a bachelor in SW Engineering)</span>\
   Universidad de los Andes\
   2017-2022 <span class="text-green-500">(Finalized)</span>
 
 ## Work experience
 
-* <strong class="underline font-normal">Graduated teaching assistant</strong> <span className="text-orange-500">(Professor)</span>\
+* <strong class="underline font-normal">Graduated teaching assistant</strong> <span className="text-orange-400">(Professor)</span>\
   Universidad de los Andes, Department of Computing and Systems Engineering\
   August 2022 - December 2024
   * Teached the problem session of a discrete mathematics course for second semester engineers, and implemented its workshops. Topics included proofs, logic, sets, relations, number theory, and counting.
@@ -32,7 +32,7 @@ title: "Curriculum Vitae"
 
 ## Awards
 
-* <strong class="underline font-medium">La noche de los mejores, Saber Pro</strong> <span className="text-orange-500">(Systems Engineering and similars)</span>\
+* <strong class="underline font-medium">La noche de los mejores, Saber Pro</strong> <span className="text-orange-400">(Systems Engineering and similars)</span>\
   Ministry of National Education of Colombia\
   2022\
   Context: Saber Pro is an exam all university graduates take in Colombia. The distinction is given for getting one of the best scores in the exam in your subject area (in my case Systems Engineering).

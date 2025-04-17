@@ -3,17 +3,23 @@ import { slugifyStr } from "@/utils/slugify";
 import type { CollectionEntry } from "astro:content";
 import { getPath } from "@/utils/getPath";
 import Datetime from "./Datetime.astro";
-import { getRelativeLocalePath } from "@/i18n/utils";
 import Tag from "./Tag.astro";
+import type { I18nStrings } from "@/i18n/types";
+import {
+  getRelativeLocalePath,
+  translateFor,
+} from "@/i18n/utils";
 
 export interface Props extends CollectionEntry<"blog"> {
   variant?: "h2" | "h3";
   padding?: number;
 }
 
+const t = translateFor(Astro.currentLocale);
+
 const { variant = "h2", padding = 0, data, id, filePath } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone, tags, previewImagePath } = data;
+const { title, description, pubDatetime, modDatetime, timezone, tags, previewImagePath, status } = data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
@@ -23,20 +29,23 @@ const headerProps = {
 const currentLocale = Astro.currentLocale;
 ---
 
-<li class=`my-6 ${padding!==0 && "sm:[&:nth-child(odd)]:pr-2" } sm:[&]:even:pl-2`>
-  {previewImagePath && (<img alt="project-preview" src={previewImagePath} class="w-60 h-40 rounded-xl pt-1 pb-1 pr-1">)}
+<li class=`my-6 ${padding!==0 && "sm:[&:nth-child(odd)]:pr-3" } sm:[&]:even:pl-3`>
+  {previewImagePath && (<div class="pr-5 pt-1 pb-1">
+    <img alt="project-preview" src={previewImagePath} class="w-[336px] h-40 rounded-xl">
+  </div>)}
   <a
     href={getRelativeLocalePath(currentLocale, getPath(id, filePath))}
     class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
   >
     {
       variant === "h2" ? (
-        <h2 {...headerProps}>{title}</h2>
+        <h2 {...headerProps}>{title}</h2> 
       ) : (
-        <h3 {...headerProps}>{title}</h3>
-      )
+        <h3 {...headerProps}>{title}</h3> 
+      ) 
     }
   </a>
+  <span class={status == "finished" || status == "lookingFor" ? "text-green-500": "text-orange-400"}>{status && `(${t(`status.${status}` as keyof I18nStrings) })`}</span>
   <Datetime {pubDatetime} {modDatetime} {timezone} />
   <ul>{tags.map((tag) => <Tag tag={tag} tagName={tag}/>)}</ul>
   <p>{description}</p>

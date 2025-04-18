@@ -1,16 +1,16 @@
 export const SITE = {
-  website: "https://astro-paper-i18n.netlify.app/", // replace this with your deployed domain
-  author: "Juan Castañeda",
+  website: "https://juanfernandocastaneda.dev", // replace this with your deployed domain
+  author: "JuanFernandoCastaneda",
   profile: "",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerIndex: 4,
-  postPerPage: 4,
+  postPerIndex: 10,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: false, // Mostrar archivados
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     url: "https://github.com/yousef8/astro-paper-i18n/edit/main/",
   },
   dynamicOgImage: true,

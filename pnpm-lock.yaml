@@ -32,9 +32,6 @@ importers:
       luxon:
         specifier: ^3.6.0
         version: 3.6.0
-      pnpm:
-        specifier: ^10.8.1
-        version: 10.8.1
       rehype-katex:
         specifier: ^7.0.1
         version: 7.0.1
@@ -2702,11 +2699,6 @@ packages:
   pidtree@0.6.0:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
     engines: {node: '>=0.10'}
-    hasBin: true
-
-  pnpm@10.8.1:
-    resolution: {integrity: sha512-xQCIupmMZ7jKjJnfil4C/Sri4rKaryOP6qnhJCSNP0j5+22yQklJ/5Ac/7teDwzBrWrttgLNKUUHUdEcNQI2dw==}
-    engines: {node: '>=18.12'}
     hasBin: true
 
   postcss-selector-parser@6.0.10:
@@ -6520,8 +6512,6 @@ snapshots:
   picomatch@4.0.2: {}
 
   pidtree@0.6.0: {}
-
-  pnpm@10.8.1: {}
 
   postcss-selector-parser@6.0.10:
     dependencies:

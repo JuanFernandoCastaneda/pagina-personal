@@ -1,8 +1,9 @@
 ---
 author: Sat Naing
 pubDatetime: 2022-09-25T15:20:35Z
+modDatetime: 2025-03-20T03:15:57.792Z
 title: Customizing AstroPaper theme color schemes
-slug: en/hola
+slug: hola
 featured: false
 draft: true
 tags:
@@ -13,7 +14,7 @@ description:
   of AstroPaper theme.
 ---
 
-This post will explain how you can enable/disable light & dark mode for the website. Moreover, you'll learn how you can customize color schemes of the entire website.
+Español
 
 ## Table of contents
 

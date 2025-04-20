@@ -34,6 +34,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  urls,
 } = post.data;
 
 const { Content } = await render(post);
@@ -109,6 +110,24 @@ const nextPost =
       <EditPost class="max-sm:hidden" {hideEditPost} {post} />
     </div>
     <p>{description}</p>
+    {
+      urls && (
+        <ul>
+          {urls.map(url => (
+            <li class="group inline-block group-hover:cursor-pointer">
+              <a
+                href={url}
+                class:list={[
+                  "relative pe-2 text-lg underline decoration-dashed group-hover:-top-0.5 group-hover:text-accent focus-visible:p-1 text-sm",
+                ]}
+              >
+                {url}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
     <article id="article" class="mx-auto prose mt-8 max-w-3xl">
       <Content />
     </article>
@@ -124,7 +143,7 @@ const nextPost =
     <div
       class="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end sm:gap-4"
     >
-      <ShareLinks />
+      {/** Comparte este proyecto en <ShareLinks />*/}
 
       <button
         id="back-to-top"

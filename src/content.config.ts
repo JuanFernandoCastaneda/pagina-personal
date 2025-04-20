@@ -22,6 +22,7 @@ const blog = defineCollection({
       timezone: z.string().optional(),
       previewImagePath: z.string().optional(),
       status: z.string().optional(),
+      urls: z.array(z.string()).optional(),
     }),
 });
 

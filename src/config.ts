@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://juanfernandocastaneda.dev", // replace this with your deployed domain
   author: "JuanFernandoCastaneda",
   profile: "",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "/projects/juanfernandocastaneda/preview.webp",
   lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,

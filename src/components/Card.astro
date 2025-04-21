@@ -30,8 +30,8 @@ const currentLocale = Astro.currentLocale;
 ---
 
 <li class=`my-6 ${padding!==0 && "sm:[&:nth-child(odd)]:pr-3" } sm:[&]:even:pl-3`>
-  {previewImagePath && (<div class="pr-5 pt-1 pb-1 prose mr-1 sm:mr-0">
-    <img alt="project-preview" src={previewImagePath} class="w-[336px] h-40 ">
+  {previewImagePath && (<div class="pr-5 pt-1 pb-1 prose">
+    <img alt="project-preview" src={previewImagePath} class="w-[336px] h-40 my-0">
   </div>)}
   <a
     href={getRelativeLocalePath(currentLocale, getPath(id, filePath))}

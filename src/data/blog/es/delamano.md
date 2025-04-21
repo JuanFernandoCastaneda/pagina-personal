@@ -6,6 +6,7 @@ title: Delamano
 slug: delamano
 featured: false
 draft: false
+status: lookingFor
 tags:
   - React
   - Typescript

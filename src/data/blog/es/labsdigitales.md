@@ -15,7 +15,7 @@ tags:
   - CSS
   - Autoit
 description:
-  Digitalización de una máquina de experimentos ópticos usada para el aprendizaje de estudiantes de física.
+  Digitalización de una máquina de experimentos ópticos usada para el aprendizaje de estudiantes de física en la Universidad de los Andes.
 previewImagePath: /projects/labsdigitales/preview.webp
 urls: 
   - https://github.com/JuanFernandoCastaneda/labs-digitales-front

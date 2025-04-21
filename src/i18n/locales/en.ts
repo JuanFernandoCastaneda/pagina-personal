@@ -4,7 +4,7 @@ const baseStrings = {
   "site.title": "JuanFernandoCastaneda",
   "site.title1": "Juan Fernando",
   "site.title2": "Castaneda",
-  "site.desc": "A fork of AstroPaper theme with support for I18n",
+  "site.desc": "Personal website and portfolio of Juan Fernando Castañeda",
 };
 
 const ENLocale: I18nStrings = {

@@ -50,13 +50,15 @@ const isActive = (path: string) => {
     >
       <a
         href={getRelativeLocalePath(currentLocale, "/")}
-        class="absolute py-1 text-xl sm:text-2xl leading-7 font-semibold whitespace-nowrap flex flex-row sm:flex-col sm:static"
+        class="absolute flex flex-row py-1 text-xl leading-7 font-semibold whitespace-nowrap sm:static sm:flex-col sm:text-2xl"
       >
-        <img
-          class="w-16 rounded-xs p-1"
-          src={"/coraje2.svg"}
-          alt="Coraje el perro cobarde"
-        />
+        <div class="prose prose-img:!my-0">
+          <img
+            class="w-16 rounded-xs p-1"
+            src={"/coraje2.svg"}
+            alt="Coraje el perro cobarde"
+          />
+        </div>
         <div id="page-name">
           {t("site.title1")}
           <br />
